@@ -13,6 +13,9 @@ LabOrigin gathers talents from leading institutions, including Expedia, Electron
 We believe, rather than a purely financial paradigm, Web3 will return to a network built on and for trust among people and their souls.
 We started to explore the possibility of SocialFi when we attended ETHGlobal HackMoney in 2021. We registered socialfi.io with the intention of building a decentralized credit lending protocol. This made us realize that social networking and collaboration are necessary for the reputation system of Web3, and it also has a huge value, so W3.work was born for that.
 
-![W3.work Metaverse](/assets/output.gif "W3.work Metaverse")
+
+<p align="center">
+  <img src="/assets/w3work.gif" alt="Sublime's custom image"/>
+</p>
 
 Our team has rich Web3 experience and determined to bring the best Web3 social application to users. Let's keep building!
