@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "LabOrigin",
+    "titleTemplate": "%s",
+    "description": "LabOrigin is building the foundation of web3 social ecosystem.",
+    "siteUrl": "https://originlabs.xyz",
+    "image": "/assets/logo.png",
+    "iconimage": "/assets/logo.png",
+    "twitterUsername": "@labOrigin_Web3"
+  },
+  "ga": "UA-XXXXXXXXX-X"
+}

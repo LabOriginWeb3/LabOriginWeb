@@ -1,0 +1,12 @@
+{
+  "socialIcons": [
+    {
+      "icon": "twitter",
+      "url": "https://twitter.com/origin_lab"
+    },
+    {
+      "icon": "github",
+      "url": "https://github.com/laborigin"
+    }
+  ]
+}
