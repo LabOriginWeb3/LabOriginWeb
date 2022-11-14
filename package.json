@@ -1,15 +1,15 @@
 {
-  "name": "@stackrole/gatsby-starter-foundation",
-  "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
+  "name": "labOrigin",
+  "description": "labOrigin website",
   "version": "2.0.0",
-  "author": "Stackrole <stackrole@gmail.com>",
+  "author": "Cuegod <cuegod@laborigin.co>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stackrole/gatsby-starter-foundation.git"
+    "url": "https://github.com/laborigin/labOrigin-web.git"
   },
   "bugs": {
-    "url": "https://github.com/stackrole/gatsby-starter-foundation/issues"
+    "url": "https://github.com/laborigin/labOrigin-web/issues"
   },
   "scripts": {
     "build": "gatsby build --log-pages",
