@@ -18,4 +18,4 @@ We started to explore the possibility of SocialFi when we attended ETHGlobal Hac
   <img src="/assets/w3work.gif" alt="Sublime's custom image"/>
 </p>
 
-Our team has rich Web3 experience and determined to bring the best Web3 social application to users. Let's keep building!
+Our team has rich Web3 experience and determined to bring the best Web3 social application to users. We are constantly learning from the market and peers, keeping our mind sharp and technologies up to date. Let's keep building!

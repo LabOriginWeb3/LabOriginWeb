@@ -38,7 +38,7 @@ Monolithic blockchains perform all of these functions on their own. On the other
 
 The most mainstream blockchain modularization mechanism is roll-ups. This mechanism transfers computation and state transfer (the execution layer) to the off-chain network and stores transaction data on the chain. Then zk-rollup (zero knowledge rollup) or fraud proof (Optimistic/Arbitrum rollup) is used for on-chain verification of the state change results calculated off the chain.
 
-![Team labOrigin](/assets/celestia-layers.png "Modular Blockchain")
+![Modular Blockchain](/assets/celestia-layers.png "Modular Blockchain")
 
 ### Celestia
 With the popularity of blockchain applications, a large amount of data needs to be stored on the blockchain. Because of the unmodifiable nature of blockchain, and because more and more transactions are performed on the network, more and more data will eventually be held on the chain. As a result, each blockchain will inevitably need an efficient way to store data (i.e., data availability) in the future.
@@ -46,7 +46,7 @@ As Web 3 is adopted around the world, the need for permanent storage of data wil
 
 Celestia is one of the pioneers of the modular blockchain architecture, which provides a data availability and consensus layer in a modular stack.
 
-![Team labOrigin](/assets/celestia-arch.png "Celestia in Modular Blockchain")
+![Celestia in Modular Blockchain](/assets/celestia-arch.png "Celestia in Modular Blockchain")
 
 - Monolith：Do everything on Ethereum. While it has maximum security and simplicity, it comes with high costs and limited scalability.
 - Roll up:Create a separate execution layer that peg back to Ethereum for verification. Fraud proof (Optimistic roolup) or validity proof (ZK rollup) can be used.
