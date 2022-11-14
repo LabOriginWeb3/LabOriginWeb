@@ -14,7 +14,7 @@ const theme = {
     labelText: "#777",
     inputBorder: "#aaa",
     inputBackground: "#fff",
-    socialIcons: lightness("siteColor", 0.4),
+    socialIcons: "siteColor",
     socialIconsHover: lightness("siteColor", 0.3),
     buttonColor: lightness("siteColor", 0.9),
     buttonHoverBg: lightness("siteColor", 0.4),
