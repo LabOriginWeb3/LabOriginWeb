@@ -2,13 +2,9 @@
 import { jsx } from "theme-ui"
 import { useColorMode } from "theme-ui"
 import { FiMoon, FiSun } from "react-icons/fi"
-import {useEffect} from "react";
 
 const Theme = () => {
   const [colorMode, setColorMode] = useColorMode();
-  useEffect(() => {
-    setColorMode("dark");
-  }, []);
   return (
     <div sx={themeStyles.modeOption}>
       <button
