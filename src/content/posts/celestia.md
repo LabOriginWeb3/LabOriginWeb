@@ -7,38 +7,36 @@ description: Research article on how Celestia help to solve blockchain Trilemma
 featuredImage: /assets/celestia.jpg
 ---
 
-区块链与Celestia
+### Blockchain Trilemma Problem
 
-什么是区块链
+This term "Blockchain Trilemma" was popularized by Ethereum co-founder Vitalik Buterin. For it to make sense, you need to be aware of three different elements that are desirable in a blockchain: decentralization, security, and scalability. The blockchain trilemma refers to the idea that it’s hard for blockchains to achieve optimal levels of all three properties simultaneously.
 
-区块链的三难困境
+- Decentralization: Create a blockchain system that does not rely on a central point of control.
+- Scalability: The ability of blockchain systems to process an increasing number of transactions.
+- Security: The ability of the blockchain system to function as intended, preventing attacks, errors and other unforeseen problems.
 
-区块链的三难困境是最初又V神提出的，目前普遍接受的观点，即在去中心化、安全性和可扩展性方面，区块链网络在任何给定时间只能提供三个好处中的两个。
+Bitcoin is a representative of decentralization. At present, there are more than 1 million bitcoin miners around the world, but at the same time, the TPS of the Bitcoin network is also very low, about 7 transactions per second.
 
-去中心化:创建一个不依赖于中心点控制的区块链系统
-可扩展性:区块链系统处理日益增长的事务数量的能力
-安全性:区块链系统按预期运行的能力，防止攻击、错误和其他不可预见的问题
+Scalability is a requirement of blockchain network, and it is also a problem that many projects are trying to overcome. Ethereum's TPS is around 15. The average TPS of Solana can reach 3000, which is the ceiling of blockchain TPS at the moment. But it sacrifices decentralization, resulting in easy to be hacked and downtime.
 
-比特币是去中心化的代表，目前全球范围内有超过100万个比特币矿机，但同时比特币网络的TPS也很低，大概 7 transactions per second.
+The security of blockchain is mainly reflected in its infrastructure and source code. The attack of BNB Chain in October, 2022 is a security issue. On the other hand, the higher the degree of decentralization, the lower the probability of 51% attacks.
 
-可扩展性是区块链网络的刚需，也是很多项目努力攻克的难题。以太坊的TPS在15左右。Solana平均TPS可以达到3000，目前算是区块链TPS天花板了，但是却牺牲了去中心化，导致很容易被黑客攻击而宕机。
+Although there is a trilemma in blockchain for the time being, it is not natively true. Many blockchain practitioners are working hard to overcome the trilemma, which has resulted in many new public chains and various roll up technologies based on Ethereum.
 
-区块链安全性主要体现在其基础设施和源代码上，前几天BNB Chain的攻击就是安全性问题。另一方面，去中心化程度越高，51%攻击的概率越低。
+### Modular blockchain
 
-虽然说区块链目前有三难困境，但是这并不是一条真理，很多区块链从业者都在努力攻克三难困境，也因此产生了很多新的公链以及基于以太坊的各种roll up技术。
+Modular blockchain is one of the many solutions to make break through in blockchain trilemma.
 
-模块化区块链
-模块化区块链可以包含四个功能:执行、结算、共识和数据可用性。
+Modular blockchains consists of four layers: execution, settlement, consensus, and data availability.
 
-执行层: 应用程序运行和状态更改执行的环境。
-结算层: 供执行层验证证明、解决欺诈纠纷以及在其他执行层之间架起桥梁。
-共识层: 关于交易顺序的协议。
-数据可用层: 存储在区块链上的交易数据。
+- Execution: The environment in which the application runs and state changes are executed.
+- Settlement: The verification of proof for execution layer, resolve fraud disputes, and build bridges between other executive layers.
+- Consensus: An agreement on the order of transactions.
+- Data Availability: Access to  the transaction data stored on the blockchain.
 
-单片链会自己执行上面的所有功能，但是模块化区块链则通过将上面这些功能分配给独立的层，让他们作为系统的一部分一起运行，这创造了区块链架构的新模式。
+Monolithic blockchains perform all of these functions on their own. On the other hand, modular blockchains create a new model of blockchain architecture by assigning these functions to separate layers that run together as part of the system.
 
-目前最主流的区块链模块化机制就是 rollup。该机制将计算和状态转移（执行层）到链下网络，并在链上储存交易数据。然后会使用零知识证明（zk-rollup）或欺诈证明（Optimistic/Arbitrum rollup），对在链下计算的状态变更结果进行链上验证。
-
+The most mainstream blockchain modularization mechanism is roll-ups. This mechanism transfers computation and state transfer (the execution layer) to the off-chain network and stores transaction data on the chain. Then zk-rollup (zero knowledge rollup) or fraud proof (Optimistic/Arbitrum rollup) is used for on-chain verification of the state change results calculated off the chain.
 
 
 
@@ -48,17 +46,17 @@ featuredImage: /assets/celestia.jpg
 
 
 
-Celestia
-随着区块链应用的普及，大量的数据就需要存储在区块链上。由于区块链的不可更改性特征，同时网络上执行的交易越来越多，那么最终链上保存的数据也会越来越多。因此，每个链在未来都不可避免地需要通过高效的方法来存储数据（即数据可用性）。
-随着 Web 3 在世界各地被采用，数据的永久储存需求也将成倍增加。模块化的区块链架构通过将数据可用性与其他区块链操作分离，使数据的吞吐量大大增加。
 
-Celestia 是模块化区块链架构的先驱之一，他们在模块化的堆栈中提供数据可用性和共识层。
+### Celestia
+With the popularity of blockchain applications, a large amount of data needs to be stored on the blockchain. Because of the unmodifiable nature of blockchain, and because more and more transactions are performed on the network, more and more data will eventually be held on the chain. As a result, each blockchain will inevitably need an efficient way to store data (i.e., data availability) in the future.
+As Web 3 is adopted around the world, the need for permanent storage of data will also multiply. The modular blockchain architecture enables the throughput of data to be greatly increased by separating data availability from other blockchain operations.
 
+Celestia is one of the pioneers of the modular blockchain architecture, which provides a data availability and consensus layer in a modular stack.
 
-Monolith：在以太坊上做所有的事情。虽然有最大的安全性和简单性，但它带来了高成本和有限的可扩展性。
-Roll up: 创建一个独立的执行层，锚定回以太坊进行结算。可以使用欺诈(乐观)或有效性(ZK)证明。
-Validium: 对Roll up的修改，将数据可用性移出以太坊。这增加了可扩展性，但牺牲了安全性。有不同的风格(数据可用性委员会、Guardians等)，有不同的权衡，但都比汇总的安全性低。
-Sovereign(主权) Rollup: 主权Roll up没有智能合约集，而是直接将区块原始数据发布到链上。Celestia负责共识和数据可用性， 而执行与结算转移到了主权Rollup上。由于主权Rollup和Celestia之间并没有信任最小化的桥梁， 因此主权Rollup可以获得独立的自由分叉升级的能力。也比非主权rolup更容易进行协调和安全升级。
-Settlement Rollup：Cevmos，一个在Celestia之上专门的结算链，其他执行链可以锚定作为单一信任最小化“集群”的一部分。
-Celestium：最后的设计是使用Celestia进行数据可用性，使用以太坊进行共识和结算。换句话说就是Celestia-backed Validium
+- Monolith：Do everything on Ethereum. While it has maximum security and simplicity, it comes with high costs and limited scalability.
+- Roll up:Create a separate execution layer that peg back to Ethereum for verification. Fraud proof (Optimistic roolup) or validity proof (ZK rollup) can be used.
+- Validium: Changes to Roll up to move data availability out of Ethereum. This increases scalability at the expense of security. There are different styles (data availability committee, Guardians, etc.) with different trade-offs, but all are less secure than rollup.
+- Sovereign Rollup: Sovereign Roll up does not have a set of smart contracts, but instead publishes the raw block data directly onto the chain. Celestia is responsible for consensus and data availability, while execution and settlement are transferred to Sovereign Rollup. Since there is no trust minimization bridge between Sovereign Rollup and Celestia, Sovereign Rollup can gain the ability to freely fork upgrades independently. Coordination and security upgrades are also easier than non-sovereign Rolups.
+- Settlement Rollup：Cevmos, a dedicated settlement layer upon Celestia, other execution layers can be used as part of a single trust minimization "cluster".
+- Celestium：Celestium uses Celestia for data availability and Ethereum for consensus and settlement. In other words, a Celestia-backed Validium
 
