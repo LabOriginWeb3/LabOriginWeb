@@ -66,6 +66,28 @@ Authenticated Transfer Protocol https://atproto.com/
 
 <br/>
 
+### CyberConnect
+
+https://cyberconnect.me/
+
+CyberConnect is a decentralized social graph protocol that serves Web3 social networks and the metaverse. Their mission is to return the ownership and utilities of social graph data back to users while providing an infrastructure for all Web3.0 developers to integrate and build upon.
+
+  <figure>
+    <img src="/assets/cyberconnect.jpeg" alt="CyberConnect" width="60%" height="60%">
+    <figcaption>CyberConnect</figcaption>
+  </figure>
+
+CyberConnect users can build up their decentralized identity by connecting their web3 wallets with web2 social accounts, like Twitter. All the user data is stored on IPFS via Ceramic in a decentralized manner. Unlike Lens and Farcaster, CyberConnect protocol doesn't focus on user interactions but the social graph itself instead. It has the following features:
+- Publicly accessible
+- Self-sovereign
+- Blockchain-agnostic
+- Decentralized governance
+- Token-incentivized
+
+CyberConnect protocol can serve like a data indexer, similar to how thegraph indexes transactional data on Ethereum. It will help to bring decentralized identity(DID) to centralized applications which integrate CyberConnect API, kind of like a bridge between web3 and web2.
+
+<br/>
+
 ### Ceramic
 
 https://ceramic.network/
