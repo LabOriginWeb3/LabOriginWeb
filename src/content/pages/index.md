@@ -9,4 +9,4 @@ cta:
   ctaLink: /about
 ---
 
-LabOrigin is building the foundation of web3 social ecosystem. We believe that web3 social will eventually change how people interact with each other online. We are currently building w3.work, a community oriented metaverse. 
+LabOrigin is a blockchain research lab focus on web3 social ecosystem. We believe that web3 social will eventually change how people interact with each other online. We are currently building w3.work, a community oriented metaverse. 
