@@ -116,9 +116,11 @@ class BlogIndex extends React.Component {
             "labOrigin base blog page " + currentPage + " of " + numPages
           }
         />
-        <h1>Blog</h1>
-        <div className="grids col-1 sm-2 lg-3">{posts}</div>
-        <Pagination {...props} />
+        <div className="wrapper">
+          <h1>Blog</h1>
+          <div className="grids col-1 sm-2 lg-3">{posts}</div>
+          <Pagination {...props} />
+        </div>
       </Layout>
     )
   }
