@@ -73,9 +73,9 @@ export const pageQuery = graphql`
 const HomePage = ({ data }) => {
   const { markdownRemark, posts } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
-  const Image = frontmatter.featuredImage
-    ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
-    : ""
+  // const Image = frontmatter.featuredImage
+  //   ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
+  //   : ""
   const sIcons = Icons.socialIcons.map((icons, index) => {
     return (
       <div key={"social icons" + index}>
@@ -195,9 +195,9 @@ const HomePage = ({ data }) => {
     )
   })
   return (
-    <Layout>
+    <Layout className="page">
       <Seo />
-      <div className="home-banner grids col-1 sm-2">
+      <div className="wrapper">
         <div>
           <h1 className="title">{frontmatter.title}</h1>
           <p
@@ -212,18 +212,18 @@ const HomePage = ({ data }) => {
             className="description"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          <Link
-            to={frontmatter.cta.ctaLink}
-            className="button"
-            sx={{
-              variant: "variants.button",
-            }}
-          >
-            {frontmatter.cta.ctaText}
-            <span className="icon -right">
-              <RiArrowRightSLine />
-            </span>
-          </Link>
+          {/*<Link*/}
+          {/*  to={frontmatter.cta.ctaLink}*/}
+          {/*  className="button"*/}
+          {/*  sx={{*/}
+          {/*    variant: "variants.button",*/}
+          {/*  }}*/}
+          {/*>*/}
+          {/*  {frontmatter.cta.ctaText}*/}
+          {/*  <span className="icon -right">*/}
+          {/*    <RiArrowRightSLine />*/}
+          {/*  </span>*/}
+          {/*</Link>*/}
           <div
             className="social-icons"
             sx={{
@@ -233,19 +233,19 @@ const HomePage = ({ data }) => {
             {sIcons}
           </div>
         </div>
-        <div>
-          {Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image"
-            />
-          ) : (
-            ""
-          )}
-        </div>
+        {/*<div>*/}
+        {/*  {Image ? (*/}
+        {/*    <GatsbyImage*/}
+        {/*      image={Image}*/}
+        {/*      alt={frontmatter.title + " - Featured image"}*/}
+        {/*      className="featured-image"*/}
+        {/*    />*/}
+        {/*  ) : (*/}
+        {/*    ""*/}
+        {/*  )}*/}
+        {/*</div>*/}
       </div>
-      <BlogListHome data={posts} />
+      {/*<BlogListHome data={posts} />*/}
     </Layout>
   )
 }

@@ -8,7 +8,7 @@ import Navigation from "./navigation"
 
 import "../assets/scss/style.scss"
 import Footer from "./footer"
-import Theme from "../components/theme"
+// import Theme from "../components/theme"
 import Search from "../components/search"
 
 const query = graphql`
@@ -31,16 +31,18 @@ const Layout = ({ children, className, props }) => {
   return (
     <div className="primary-container">
       <Header>
-        <Logo title={siteTitle} />
-        <div sx={layoutStyle.nav}>
-          <div sx={{ display: ["flex", "flex", "flex", "none"] }}>
-            <Search searchIndex={siteSearchIndex.index} />
+        <div className="site-header">
+          <Logo title={siteTitle} />
+          <div sx={layoutStyle.nav}>
+            <div sx={{ display: ["flex", "flex", "flex", "none"] }}>
+              <Search searchIndex={siteSearchIndex.index} />
+            </div>
+            <Navigation />
           </div>
-          <Navigation />
-        </div>
-        <div sx={layoutStyle.appearance}>
-          <Search searchIndex={siteSearchIndex.index} />
-          {/*<Theme />*/}
+          <div sx={layoutStyle.appearance}>
+            <Search searchIndex={siteSearchIndex.index} />
+            {/*<Theme />*/}
+          </div>
         </div>
       </Header>
       <main className={"container " + className}>{children}</main>

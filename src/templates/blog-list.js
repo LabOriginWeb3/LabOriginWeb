@@ -4,8 +4,9 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import Layout from "../components/layout"
-import PostCard from "../components/post-card"
+// import PostCard from "../components/post-card"
 import Seo from "../components/seo"
+import PostList from "../components/post-list";
 
 const styles = {
   pagination: {
@@ -97,7 +98,7 @@ class BlogIndex extends React.Component {
 
     const posts = data.allMarkdownRemark.edges
       .filter(edge => !!edge.node.frontmatter.date)
-      .map(edge => <PostCard key={edge.node.id} data={edge.node} />)
+      .map(edge => <PostList key={edge.node.id} data={edge.node} />)
     let props = {
       isFirst,
       prevPage,
@@ -118,8 +119,9 @@ class BlogIndex extends React.Component {
         />
         <div className="wrapper">
           <h1>Blog</h1>
-          <div className="grids col-1 sm-2 lg-3">{posts}</div>
-          <Pagination {...props} />
+          {/*<div className="grids col-1 sm-2 lg-3">{posts}</div>*/}
+          {/*<Pagination {...props} />*/}
+          <div>{posts}</div>
         </div>
       </Layout>
     )
